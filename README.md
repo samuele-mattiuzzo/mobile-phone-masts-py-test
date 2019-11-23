@@ -16,18 +16,12 @@
 
 ## Running the app
 
-- executing tasks 1 through 4 automatically
+- running the main script (to launch all tasks or each individually)
 
   ```
   $ python3 main.py
   ```
 
-
-- executing a single task
-
-  ```
-  $ python3 main.py --t[1,2,3,4]
-  ```
 
 - running the tests
 
