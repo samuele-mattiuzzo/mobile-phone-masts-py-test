@@ -28,3 +28,7 @@
   ```
   $ py.test
   ```
+
+## Description
+
+A brief explanation is available in a [separate document](EXPLAIN.md)
