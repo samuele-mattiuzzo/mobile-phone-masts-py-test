@@ -45,7 +45,22 @@ def get_header_index(header):
     return CSV_FILE_HEADERS_INDEX.get(header)
 
 
+def to_human_readable(values_list):
+    # simple helper to convert a list into a more readable comma separated set of values
+    return ','.join(map(str, values_list))
+
+
+def file_headers_to_human_readable():
+    # returns the headers' names as a list
+    # equivalent of reader[0]
+    return to_human_readable(
+        list(CSV_FILE_HEADERS_INDEX.keys())
+    )
+
+
 def get_masts_as_list():
+    # reads the Masts csv file and returns a list of lists
+    # skips the headers line
     mast_file = open(CSV_FILE, 'r', encoding='utf-8')
     reader = csv.reader(mast_file, delimiter=',')
     return list(reader)[1:]  # skips the header

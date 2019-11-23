@@ -37,6 +37,7 @@ def task_3(group_by='Tenant Name'):
     Return a dict object {tenant_name: count_of_masts}.
     '''
     reader = utils.get_masts_as_list()
+    
     group_by_index = utils.get_header_index(group_by)
 
     res = {}
